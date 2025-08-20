@@ -1,0 +1,54 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Point Consulting</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+        letterSpacing: {
+          luxury: '0.08em', // slightly more than normal, less than widest
+        },
+          colors: {
+            navy: '#0A1F44',
+            charcoal: '#1E1B1A',
+            accent: '#882222', 
+            warmGray: '#CFC7BF',
+
+          },
+        fontFamily: {
+          heading: ['Georgia', 'Baskerville', 'serif'],
+          hero: ['Merriweather', 'serif'],
+          body: ['Georgia', 'Times New Roman', 'serif'],
+        }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-charcoal text-white">
+  <!-- Title Bar -->
+  <header class="w-full p-6 text-warmGray font-extrabold tracking-luxury font-heading text-lg">
+    Best Point Consulting
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center font-hero">
+    <img src="assets/IMG_0806-1080-1076.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover ">
+    <div class="absolute inset-0 bg-black/65"></div> <!-- dark overlay -->
+    <h1 class="text-7xl text-accent z-10">Be the best.</h1>
+  </section>
+
+  <!-- Copy Section -->
+  <section class="bg-charcoal text-gray-300 py-32 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">About Best Point Consulting</h2>
+      <p class="text-lg leading-relaxed">
+        Blah reeeee
+      </p>
+    </div>
+  </section>
+</body>
